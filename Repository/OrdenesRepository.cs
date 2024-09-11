@@ -65,7 +65,7 @@ namespace Repository
             var orden = await _context.Ordenes
                 .Include(c => c.Cliente)
                 .Include(dt => dt.DetalleOrdenes)
-                    //Entonces incluye (recibe el objeto de detalle de ordenes)
+                    //Entonces incluye (recibe el objeto de detalle de ordenes )
                     .ThenInclude(d => d.Servicio)
                 .Where(o => o.OrdenID == id)
                 .FirstOrDefaultAsync();
