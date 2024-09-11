@@ -1,0 +1,6 @@
+@SISAUTO_HostAddress = http://localhost:5240
+
+GET {{SISAUTO_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
